@@ -113,6 +113,10 @@ export class demonlord{
         if (itemType == 'any') return allItems.filter(i => i.type == 'item');
     }
 
+    getItemTypes() {
+        return [];
+    }
+
     getItemUses(item) {
         return {available: item.data.data.quantity};
     }

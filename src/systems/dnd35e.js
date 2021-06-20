@@ -155,6 +155,20 @@ export class dnd35e{
         }
     }
 
+    getItemTypes() {
+        types = [
+            {value:'weapon', name:'Weapons'},
+            {value:'equipment', name:'Armor/Equipment'},
+            {value:'consumable', name:'Consumables'},
+            {value:'gear', name:'Gear'},
+            {value:'ammo', name:'Ammunition'},
+            {value:'misc', name:'Miscellaneous'},
+            {value:'tradeGoods', name:'Trade Goods'},
+            {value:'container', name:'Containers'}
+        ];
+        return types;
+    }
+
     getItemUses(item) {
         return {available: item.data.data.quantity};
     }

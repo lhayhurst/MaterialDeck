@@ -156,6 +156,17 @@ export class pf2e{
     getItemUses(item) {
         return {available: item.data.data.quantity.value};
     }
+
+    getItemTypes() {
+        types = [
+            {value:'weapon', name:'Weapons'},
+            {value:'armor', name:'Armor'},
+            {value:'equipment', name:'Equipment'},
+            {value:'consumable', name:'Consumables'},
+            {value:'treasure', name:'Treasure'}
+        ];
+        return types;
+    }
     
     /**
      * Features

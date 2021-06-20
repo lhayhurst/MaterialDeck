@@ -148,6 +148,18 @@ export class dnd5e{
         else if (roll == 'deathSave') token.actor.rollDeathSave(options);
     }
 
+    getItemTypes() {
+        types = [
+            {value:'weapon', name:'Weapons'},
+            {value:'equipment', name:'Equipment'},
+            {value:'consumable', name:'Consumables'},
+            {value:'tool', name:'Tools'},
+            {value:'backpack', name:'Containers'},
+            {value:'loot', name:'Loot'}
+        ]
+        return types;
+    }
+
     /**
      * Items
      */

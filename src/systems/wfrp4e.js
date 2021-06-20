@@ -123,6 +123,17 @@ export class wfrp4e {
         }
     }
 
+    getItemtypes() {
+        types = [
+            {value:'weapon', name: "Weapons"},
+            {value:'ammunition', name: "Ammunition"},
+            {value:'trapping', name: "Trapping"},
+            {value:'armour', name: "Armour"},
+            {value:'cargo', name: "Cargo"}
+        ];
+        return types;
+    }
+
 
     getItemUses(item) {
         console.log("getItemUses(" , item , ")")
